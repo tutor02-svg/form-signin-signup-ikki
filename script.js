@@ -4,10 +4,10 @@ function togglePassword() {
 
   if (pass.type === "password") {
     pass.type = "text";
-    icon.src = "./assets/hide.png";
+    icon.src = "/hide.png";
   } else {
     pass.type = "password";
-    icon.src = "./assets/show.png";
+    icon.src = "/show.png";
   }
 }
 
@@ -36,6 +36,6 @@ document.getElementById("signinForm").addEventListener("submit", function (e) {
   this.reset();
 
   // KEMBALIKAN KE DEFAULT
-  document.getElementById("eyeIcon").src = "./assets/show.png";
+  document.getElementById("eyeIcon").src = "/show.png";
   document.getElementById("password").type = "password";
 });

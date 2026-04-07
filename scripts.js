@@ -5,10 +5,10 @@ function togglePass(inputId, iconId) {
 
   if (input.type === "password") {
     input.type = "text";
-    icon.src = "./assets/hide.png";
+    icon.src = "/hide.png";
   } else {
     input.type = "password";
-    icon.src = "./assets/show.png";
+    icon.src = "/show.png";
   }
 }
 
@@ -35,8 +35,8 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
 
   this.reset();
 
-  document.getElementById("icon1").src = "./assets/show.png";
-  document.getElementById("icon2").src = "./assets/show.png";
+  document.getElementById("icon1").src = "/show.png";
+  document.getElementById("icon2").src = "/show.png";
 
   document.getElementById("password").type = "password";
   document.getElementById("confirm").type = "password";
